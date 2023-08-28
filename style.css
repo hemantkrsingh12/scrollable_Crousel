@@ -1,0 +1,72 @@
+.crosual {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030a23;
+}
+.container {
+  border-radius: 4px;
+  border: 1px solid black;
+  width: 30vw;
+  aspect-ratio: 16/9;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+#flex_container {
+  display: flex;
+ 
+}
+.button {
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #ccc;
+}
+
+#left {
+  transform: translateY(250%);
+  left: 10px;
+}
+#right {
+  transform: translateY(250%);
+  right: 10px;
+}
+.image {
+  width: 100%;
+  aspect-ratio: 11/9;
+  object-fit: cover;
+}
+#croselnav {
+  height: 17px;
+  /* background-color: red; */
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.dot_style {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  cursor: pointer;
+  
+}
+.active{
+  background-color: white;
+}
